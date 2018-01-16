@@ -10,7 +10,6 @@
 # Your function should return length = 2, with the first two elements of nums being 1 and 2 respectively.
 # It doesn't matter what you leave beyond the new length.
 
-
 class Solution(object):
     def removeDuplicates(self, nums):
 
@@ -26,3 +25,13 @@ class Solution(object):
                     nums[start] = nums[x]
 
         return start + 1
+
+
+
+
+a = [1, 2, 3, 4, 4, 5, 6]
+b = [1, 1, 2]
+
+print(a, Solution().removeDuplicates(a))
+print(b, Solution().removeDuplicates(b))
+
