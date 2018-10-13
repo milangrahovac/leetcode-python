@@ -11,8 +11,8 @@
 #
 # Input: S = "12345"
 # Output: ["12345"]
+# 
 # Note:
-#
 # S will be a string with length at most 12.
 # S will consist only of letters or digits.
 
