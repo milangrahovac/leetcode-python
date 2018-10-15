@@ -37,5 +37,3 @@ class Solution:
                     result.append(int(num))
         return result
 
-
-print(Solution().selfDividingNumbers(4, 51))
