@@ -13,6 +13,3 @@ class Solution(object):
 
 a = 16
 b = 25
-
-print(a, Solution().mySqrt(a))
-print(b, Solution().mySqrt(b))
