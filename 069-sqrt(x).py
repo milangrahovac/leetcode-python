@@ -9,7 +9,3 @@
 class Solution(object):
     def mySqrt(self, x):
         return int(x ** 0.5)
-
-
-a = 16
-b = 25
