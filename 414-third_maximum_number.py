@@ -1,6 +1,7 @@
 # 414. Third Maximum Number
 #
-# Given a non-empty array of integers, return the third maximum number in this array. If it does not exist, return the maximum number. The time complexity must be in O(n).
+# Given a non-empty array of integers, return the third maximum number in this array. 
+# If it does not exist, return the maximum number. The time complexity must be in O(n).
 #
 # Example 1:
 # Input: [3, 2, 1]
@@ -23,15 +24,3 @@ class Solution:
     def thirdMax(self, nums):
         nums = sorted(list(set(nums)))
         return nums[-3] if len(nums) >= 3 else max(nums)
-
-
-a = [3, 2, 1]
-b = [1, 2]
-c = [2, 2, 3, 1]
-d = [1, 2, 3, 4, 5]
-
-if __name__ == "__main__":
-    print(a, Solution().thirdMax(a))
-    print(b, Solution().thirdMax(b))
-    print(c, Solution().thirdMax(c))
-    print(d, Solution().thirdMax(d))
