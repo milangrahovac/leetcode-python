@@ -5,11 +5,10 @@
 # you can find by performing this transformation.
 #
 # Example 1:
-#
 # Input: "aacecaaa"
 # Output: "aaacecaaa"
+# 
 # Example 2:
-#
 # Input: "abcd"
 # Output: "dcbabcd"
 
