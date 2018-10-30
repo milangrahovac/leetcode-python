@@ -13,7 +13,5 @@
 
 class Solution:
     def findDuplicate(self, nums):
-
         seted = set(nums)
-
         return int((sum(nums)-sum(seted))/(len(nums)-len(seted)))
