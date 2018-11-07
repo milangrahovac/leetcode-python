@@ -8,6 +8,7 @@
 # Note:
 # Each element in the result should appear as many times as it shows in both arrays.
 # The result can be in any order.
+# 
 # Follow up:
 # What if the given array is already sorted? How would you optimize your algorithm?
 # What if nums1's size is small compared to nums2's size? Which algorithm is better?
