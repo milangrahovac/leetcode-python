@@ -18,8 +18,6 @@
 # Your algorithm should run in O(n) time and uses constant extra space.
 
 
-
-
 class Solution(object):
     def firstMissingPositive(self, nums):
 
@@ -36,4 +34,3 @@ class Solution(object):
             for x in range(1, max(nums)+2):
                 if x not in nums:
                     return x
-
