@@ -25,5 +25,4 @@ class Solution:
 
         for n in range(0, len(nums)-k+1):
             result.append(max(list(nums[n:n+k])))
-            print(nums[n:n+k])
         return result
