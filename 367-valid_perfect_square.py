@@ -5,12 +5,10 @@
 # Note: Do not use any built-in library function such as sqrt.
 #
 # Example 1:
-#
 # Input: 16
 # Returns: True
 #
 # Example 2:
-#
 # Input: 14
 # Returns: False
 
