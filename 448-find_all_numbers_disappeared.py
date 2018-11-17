@@ -7,10 +7,8 @@
 # You may assume the returned list does not count as extra space.
 #
 # Example:
-# Input:
-# [4,3,2,7,8,2,3,1]
-# Output:
-# [5,6]
+# Input: [4,3,2,7,8,2,3,1]
+# Output: [5,6]
 
 
 class Solution(object):
@@ -28,6 +26,3 @@ class Solution(object):
                     if x not in nums_set:
                         results.append(x)
                 return results
-
-
-# return list(set(range(1, max(max(nums), len(nums))+1)) - set(nums))
