@@ -9,5 +9,3 @@ class Solution(object):
             if x == rx:
                 return True
         return False
-
-"hello"
