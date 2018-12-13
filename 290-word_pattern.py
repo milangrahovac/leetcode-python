@@ -23,3 +23,30 @@
 # Notes:
 # You may assume pattern contains only lowercase letters, 
 # and str contains lowercase letters separated by a single space.
+
+
+class Solution(object):
+    def wordPattern(self, pattern, str):
+
+        words = str.split()
+        dict_letters = {}
+        dict_words = {}
+
+        if len(pattern) != len(words):
+            return False
+        else:
+            for x in range(len(pattern)):
+                if pattern[x] not in dict_letters:
+                    dict_letters[pattern[x]] = [x]
+                else:
+                    dict_letters[pattern[x]].append(x)
+                
+                if words[x] not in dict_words:
+                    dict_words[words[x]] = [x]
+                else:
+                    dict_words[words[x]].append(x)
+
+                if dict_words[words[x]] != dict_letters[pattern[x]]:
+                    return False
+
+        return True
