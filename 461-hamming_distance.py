@@ -18,3 +18,18 @@
 #        ↑   ↑
 
 # The above arrows point to positions where the corresponding bits are different.
+
+class Solution(object):
+    def hammingDistance(self, x, y):
+
+        x = str(bin(x))[2:]
+        y = str(bin(y))[2:]
+        x = x.zfill(max(len(x), len(y)))
+        y = y.zfill(max(len(x), len(y)))
+
+        n = 0
+
+        for i in range(len(x)):
+            if x[i] != y[i]:
+                n += 1
+        return n
