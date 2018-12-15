@@ -19,6 +19,7 @@
 
 # The above arrows point to positions where the corresponding bits are different.
 
+
 class Solution(object):
     def hammingDistance(self, x, y):
 
