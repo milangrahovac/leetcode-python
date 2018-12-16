@@ -13,3 +13,11 @@
 # Restrictions:
 # The string consists of lower English letters only.
 # Length of the given string and k will in the range [1, 10000]
+
+
+class Solution(object):
+    def reverseStr(self, s, k):
+        result = ""
+        for x in range(0, len(s), 2*k):
+            result += s[x:x+k][::-1] + s[x+k:x+2*k]
+        return result
