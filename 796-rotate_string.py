@@ -16,3 +16,19 @@
 
 # Note:
 # A and B will have length at most 100.
+
+
+class Solution:
+    def rotateString(self, A, B):
+        
+        if len(A) != len(B):
+            return False
+        
+        if A == B:
+            return True
+        else:
+            for x in range(len(A)-1):
+                A = A[1:] + A[0]
+                if B == A:
+                    return True
+            return False
