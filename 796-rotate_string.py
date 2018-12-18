@@ -23,7 +23,7 @@ class Solution:
         
         if len(A) != len(B):
             return False
-        
+
         if A == B:
             return True
         else:
