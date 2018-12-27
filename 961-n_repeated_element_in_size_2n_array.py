@@ -20,3 +20,9 @@
 # 4 <= A.length <= 10000
 # 0 <= A[i] < 10000
 # A.length is even
+class Solution:
+    def repeatedNTimes(self, A):
+        for x in A:
+            if A.count(x) > 1:
+                return x
+                
