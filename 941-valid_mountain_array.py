@@ -24,3 +24,23 @@
 # Note:
 # 0 <= A.length <= 10000
 # 0 <= A[i] <= 10000 
+
+class Solution:
+    def validMountainArray(self, A):
+        
+        if len(A) >= 3:
+            m = max(A)
+            i = A.index(m)
+
+            if m != A[0] and m != A[len(A)-1]:    
+                for x in range(0, i-1):
+                    if A[x] >= A[x+1]:
+                        return False
+
+                for x in range(i, len(A)-1):
+                    if A[x] <= A[x+1]:
+                        return False
+                
+                return True
+        
+        return False
