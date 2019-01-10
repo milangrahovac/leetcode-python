@@ -25,6 +25,7 @@
 # 0 <= A.length <= 10000
 # 0 <= A[i] <= 10000 
 
+
 class Solution:
     def validMountainArray(self, A):
         
