@@ -12,6 +12,8 @@
 # Output: 10
 
 # Note: Your solution should run in O(log n) time and O(1) space.
+
+
 class Solution:
     def singleNonDuplicate(self, nums):
         s = set(nums)
