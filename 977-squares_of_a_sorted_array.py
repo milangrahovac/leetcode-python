@@ -17,3 +17,8 @@ Note:
 1 <= A.length <= 10000
 -10000 <= A[i] <= 10000
 A is sorted in non-decreasing order.
+
+
+class Solution:
+    def sortedSquares(self, A: 'List[int]') -> 'List[int]':
+        return sorted([x**2 for x in A])
