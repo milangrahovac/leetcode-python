@@ -25,13 +25,3 @@ class Solution(object):
                     nums[start] = nums[x]
 
         return start + 1
-
-
-
-
-a = [1, 2, 3, 4, 4, 5, 6]
-b = [1, 1, 2]
-
-print(a, Solution().removeDuplicates(a))
-print(b, Solution().removeDuplicates(b))
-
