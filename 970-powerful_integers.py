@@ -30,3 +30,16 @@
 # 1 <= x <= 100
 # 1 <= y <= 100
 # 0 <= bound <= 10^6
+class Solution:
+    def powerfulIntegers(self, x: int, y: int, bound: int) -> List[int]:
+        result = []
+        for a in range(0, 100):
+            px = x ** a
+            if px >= bound:
+                break
+            for b in range(0, 100):
+                py = y ** b
+                if px + py > bound:
+                    break
+                result.append(px + py)
+        return list(set(result))
