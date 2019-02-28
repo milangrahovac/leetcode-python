@@ -7,8 +7,6 @@
 # You may return the answer in any order.  
 # In your answer, each value should occur at most once.
 
- 
-
 # Example 1:
 # Input: x = 2, y = 3, bound = 10
 # Output: [2,3,4,5,7,9,10]
@@ -30,6 +28,8 @@
 # 1 <= x <= 100
 # 1 <= y <= 100
 # 0 <= bound <= 10^6
+
+
 class Solution:
     def powerfulIntegers(self, x: int, y: int, bound: int) -> List[int]:
         result = []
