@@ -54,7 +54,6 @@ class Solution(object):
                 elif imin < 60:
                     times.append("".join(x) + format(imin, '02d'))
 
-
             m.append(int(x[0]))
             m.append(int(x[1]))
 
@@ -76,4 +75,3 @@ class Solution(object):
             minutes = format(minutes, '02d')
 
             return "{}:{}".format(hours, minutes)
-            
