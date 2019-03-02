@@ -76,3 +76,4 @@ class Solution(object):
             minutes = format(minutes, '02d')
 
             return "{}:{}".format(hours, minutes)
+            
