@@ -13,11 +13,9 @@
 # Output: "23:41"
 
 # Example 2:
-
 # Input: [5,5,5,5]
 # Output: ""
  
-
 # Note:
 # A.length == 4
 # 0 <= A[i] <= 9
