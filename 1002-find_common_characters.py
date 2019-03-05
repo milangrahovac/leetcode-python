@@ -8,17 +8,14 @@
 # You may return the answer in any order.
 
 # Example 1:
-
 # Input: ["bella","label","roller"]
 # Output: ["e","l","l"]
-# Example 2:
 
+# Example 2:
 # Input: ["cool","lock","cook"]
 # Output: ["c","o"]
  
-
 # Note:
-
 # 1 <= A.length <= 100
 # 1 <= A[i].length <= 100
 # A[i][j] is a lowercase letter
