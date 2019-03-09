@@ -29,3 +29,4 @@ class Solution(object):
                     return [x+1, i+1]
                 if s > target:
                     break
+                    
