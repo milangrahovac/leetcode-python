@@ -1,7 +1,5 @@
 # 462. Minimum Moves to Equal Array Elements II
 
-
-
 # Given a non-empty integer array, find the minimum number of moves 
 # required to make all array elements equal, 
 # where a move is incrementing a selected element by 1 
@@ -18,7 +16,6 @@
 # Explanation:
 # Only two moves are needed (remember each move increments or decrements one element):
 # [1,2,3]  =>  [2,2,3]  =>  [2,2,2]
-
 
 
 from statistics import median
