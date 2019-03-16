@@ -12,3 +12,15 @@ Input: [3,2,3,1,2,4,5,5,6] and k = 4
 Output: 4
 Note: 
 You may assume k is always valid, 1 ≤ k ≤ array's length
+
+class Solution:
+    def findKthLargest(self, nums: List[int], k: int) -> int:
+        
+        if k == 1:
+            return max(nums)
+        else:    
+            return sorted(nums)[-k:][:-1][0]
+        
+        
+        
+        
