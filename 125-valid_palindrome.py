@@ -13,6 +13,7 @@
 # Input: "race a car"
 # Output: false
 
+
 class Solution(object):
     def isPalindrome(self, s):
 
