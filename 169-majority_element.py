@@ -10,9 +10,3 @@ class Solution:
         for x in set(nums):
             if nums.count(x) > len(nums)/2:
                 return x
-
-a = [0, 1, 0, 3, 12, 12, 12, 5, 12, 12, 12, 6, 12, 12]
-b = [0, 1, 0, 3, 5, 0, 12, 2, 4, 5, 5, 5, 5, 5, 6, 5, 5, 5, 5]
-
-print(Solution().majorityElement(a))
-print(Solution().majorityElement(b))
