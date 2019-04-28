@@ -13,7 +13,6 @@
 # Returns: False
 
 
-
 class Solution(object):
     def isPerfectSquare(self, num):
 
