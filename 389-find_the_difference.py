@@ -16,8 +16,8 @@
 # 'e' is the letter that was added.
 
 
-
 from collections import Counter
+
 
 class Solution(object):
     def findTheDifference(self, s, t):
