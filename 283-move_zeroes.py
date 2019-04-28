@@ -17,10 +17,3 @@ class Solution:
             if x == 0:
                 nums.remove(0)
                 nums.append(0)
-
-
-a = [0, 1, 0, 3, 12]
-b = [0, 1, 0, 3, 5, 0, 12]
-
-print(Solution().moveZeroes(a))
-print(Solution().moveZeroes(b))
