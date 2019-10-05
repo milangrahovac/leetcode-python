@@ -19,3 +19,16 @@
 
 # Constraints:
 # The given dates are valid dates between the years 1971 and 2100.
+
+
+from datetime import datetime, date, time
+
+
+class Solution(object):
+    def dayOfTheWeek(self, day, month, year):
+
+        d = date(year, month, day)
+        days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+
+        return days[d.weekday()]
+        
