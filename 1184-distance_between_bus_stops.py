@@ -28,6 +28,7 @@
 # 0 <= start, destination < n
 # 0 <= distance[i] <= 10^4
 
+
 class Solution(object):
     def distanceBetweenBusStops(self, distance, start, destination):
 
@@ -35,3 +36,4 @@ class Solution(object):
         m = max(start, destination)
 
         return min(sum(distance[n:m]), sum(distance[m:] + distance[:n]))
+        
