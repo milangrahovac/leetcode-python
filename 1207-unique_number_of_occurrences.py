@@ -1,5 +1,5 @@
 # 1207. Unique Number of Occurrences
-# a
+# ab
 
 class Solution(object):
     def uniqueOccurrences(self, arr):
