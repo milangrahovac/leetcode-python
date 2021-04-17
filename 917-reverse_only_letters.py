@@ -28,16 +28,16 @@ from string import ascii_letters
 class Solution:
     def reverseOnlyLetters(self, S):
 
-        s = ""
+        string = ""
 
         for x in range(len(S)):
             if S[x] in ascii_letters:
-                s += S[x]
+                string += S[x]
 
-        s = list(s[::-1])
+        string = list(string[::-1])
 
         for x in range(len(S)):
             if S[x] not in ascii_letters:
-                s.insert(x, S[x])
+                string.insert(x, S[x])
 
-        return "".join(s)
+        return "".join(string)

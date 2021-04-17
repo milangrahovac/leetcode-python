@@ -21,8 +21,8 @@ class Solution:
         if len(nums) == 0:
             return 0
         result, n = 0, 1
-        for x in range(len(nums)-1):
-            if nums[x] < nums[x+1]:
+        for x in range(len(nums) - 1):
+            if nums[x] < nums[x + 1]:
                 n += 1
             else:
                 result = max(result, n)

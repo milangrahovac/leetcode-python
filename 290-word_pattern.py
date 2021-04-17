@@ -1,7 +1,7 @@
 # 290. Word Pattern
 
 # Given a pattern and a string str, find if str follows the same pattern.
-# Here follow means a full match, such that there is a bijection between a letter 
+# Here follow means a full match, such that there is a bijection between a letter
 # in pattern and a non-empty word in str.
 
 # Example 1:
@@ -21,7 +21,7 @@
 # Output: false
 
 # Notes:
-# You may assume pattern contains only lowercase letters, 
+# You may assume pattern contains only lowercase letters,
 # and str contains lowercase letters separated by a single space.
 
 
@@ -40,7 +40,7 @@ class Solution(object):
                     dict_letters[pattern[x]] = [x]
                 else:
                     dict_letters[pattern[x]].append(x)
-                
+
                 if words[x] not in dict_words:
                     dict_words[words[x]] = [x]
                 else:

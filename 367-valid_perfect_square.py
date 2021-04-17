@@ -30,7 +30,6 @@ class Solution(object):
 
             max_len_sqr_root = min_len_sqr_root + 1
 
-
             for x in range(min_len_sqr_root - 1):
                 min_root *= 10
 

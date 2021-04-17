@@ -1,7 +1,7 @@
 # 1184. Distance Between Bus Stops
 
-# A bus has n stops numbered from 0 to n - 1 that form a circle. 
-# We know the distance between all pairs of neighboring stops where distance[i] 
+# A bus has n stops numbered from 0 to n - 1 that form a circle.
+# We know the distance between all pairs of neighboring stops where distance[i]
 # is the distance between the stops number i and (i + 1) % n.
 
 # The bus goes along both directions i.e. clockwise and counterclockwise.
@@ -36,4 +36,3 @@ class Solution(object):
         m = max(start, destination)
 
         return min(sum(distance[n:m]), sum(distance[m:] + distance[:n]))
-        

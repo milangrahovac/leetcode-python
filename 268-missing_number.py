@@ -28,7 +28,7 @@ class Solution(object):
                 missing_num = expected_sum - real_sum
                 return missing_num
             else:
-                return max_num+1
+                return max_num + 1
 
         else:
             if nums[0] == 0:

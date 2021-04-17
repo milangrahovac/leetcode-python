@@ -35,7 +35,7 @@ class Solution:
 
         result = 0
 
-        for x in range(L, R+1):
+        for x in range(L, R + 1):
             num = str(bin(x)[2:]).count("1")
 
             prime = True
@@ -43,7 +43,7 @@ class Solution:
             if num == 1:
                 prime = False
             else:
-                for i in range (2, int(num/2) + 1):
+                for i in range(2, int(num / 2) + 1):
                     if num % i == 0 and num != i:
                         prime = False
                         break

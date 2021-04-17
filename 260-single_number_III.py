@@ -1,7 +1,7 @@
 # 260. Single Number III
 
-# Given an array of numbers nums, in which exactly two elements appear only once 
-# and all the other elements appear exactly twice. 
+# Given an array of numbers nums, in which exactly two elements appear only once
+# and all the other elements appear exactly twice.
 # Find the two elements that appear only once.
 
 # Example:
@@ -10,20 +10,20 @@
 
 # Note:
 # The order of the result is not important. So in the above example, [5, 3] is also correct.
-# Your algorithm should run in linear runtime complexity. 
+# Your algorithm should run in linear runtime complexity.
 # Could you implement it using only constant space complexity?
 
 
 class Solution:
     def singleNumber(self, nums):
-        
+
         one = set()
         two = set()
-        
+
         for n in nums:
             if n not in one:
                 one.add(n)
             else:
                 two.add(n)
-                
-        return list(one-two)
+
+        return list(one - two)

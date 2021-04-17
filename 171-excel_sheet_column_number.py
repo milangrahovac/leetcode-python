@@ -10,7 +10,7 @@
 #     ...
 #     Z -> 26
 #     AA -> 27
-#     AB -> 28 
+#     AB -> 28
 #     ...
 
 # Example 1:
@@ -30,16 +30,16 @@ class Solution:
     def titleToNumber(self, s):
         alpha = string.ascii_uppercase
         result = 0
-        
+
         if len(s) == 1:
             result = alpha.index(s)
-        else: 
+        else:
             for x in range(1, len(s)):
                 result += 26 ** x
-            
+
             while len(s) > 1:
-                for i in range(1, len(s)+1):
-                    result += alpha.index(s[0]) * (26 ** (len(s)-1))
+                for i in range(1, len(s) + 1):
+                    result += alpha.index(s[0]) * (26 ** (len(s) - 1))
                     s = s[1:]
-        
+
         return result + 1

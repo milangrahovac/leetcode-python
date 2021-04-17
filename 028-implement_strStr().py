@@ -20,7 +20,7 @@ class Solution:
         if needle in haystack:
             for x in range(len(haystack) - len(needle) + 1):
                 if haystack[x] == needle[0]:
-                    if needle == haystack[x:x+len(needle)]:
+                    if needle == haystack[x : x + len(needle)]:
                         return x
 
         return -1

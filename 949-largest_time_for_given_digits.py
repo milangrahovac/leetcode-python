@@ -2,10 +2,10 @@
 
 # Given an array of 4 digits, return the largest 24 hour time that can be made.
 
-# The smallest 24 hour time is 00:00, and the largest is 23:59.  
+# The smallest 24 hour time is 00:00, and the largest is 23:59.
 # Starting from 00:00, a time is larger if more time has elapsed since midnight.
 
-# Return the answer as a string of length 5.  
+# Return the answer as a string of length 5.
 # If no valid time can be made, return an empty string.
 
 # Example 1:
@@ -15,13 +15,14 @@
 # Example 2:
 # Input: [5,5,5,5]
 # Output: ""
- 
+
 # Note:
 # A.length == 4
 # 0 <= A[i] <= 9
 
 
 from itertools import permutations
+
 
 class Solution(object):
     def largestTimeFromDigits(self, A):
@@ -45,9 +46,9 @@ class Solution(object):
                 imin = min(int(i), int(i[::-1]))
 
                 if imax < 60:
-                    times.append("".join(x) + format(imax, '02d'))
+                    times.append("".join(x) + format(imax, "02d"))
                 elif imin < 60:
-                    times.append("".join(x) + format(imin, '02d'))
+                    times.append("".join(x) + format(imin, "02d"))
 
             m.append(int(x[0]))
             m.append(int(x[1]))
@@ -66,7 +67,7 @@ class Solution(object):
                 if hours == int(time[:2]):
                     minutes = max(minutes, int(time[2:]))
 
-            hours = format(hours, '02d')
-            minutes = format(minutes, '02d')
+            hours = format(hours, "02d")
+            minutes = format(minutes, "02d")
 
             return "{}:{}".format(hours, minutes)

@@ -39,10 +39,14 @@ class Solution:
 
         for x in licensePlate:
             if x in string.ascii_letters:
-                plate_letters[x.lower()] = licensePlate.count(x.upper()) + licensePlate.count(x.lower())
+                plate_letters[x.lower()] = licensePlate.count(
+                    x.upper()
+                ) + licensePlate.count(x.lower())
 
         for word in words:
-            if all(plate_letters[letter] <= word.count(letter) for letter in plate_letters):
+            if all(
+                plate_letters[letter] <= word.count(letter) for letter in plate_letters
+            ):
                 if result == "":
                     result = word
                 else:

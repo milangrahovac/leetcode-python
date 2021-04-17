@@ -11,10 +11,9 @@
 # return [0, 1].
 
 
-class Solution():
-
+class Solution:
     def twoSum(self, nums, target):
-        for x in range(len(nums)-1):
-            for y in range(x+1, len(nums)):
+        for x in range(len(nums) - 1):
+            for y in range(x + 1, len(nums)):
                 if target == nums[x] + nums[y]:
                     return [x, y]

@@ -8,5 +8,5 @@
 class Solution:
     def majorityElement(self, nums):
         for x in set(nums):
-            if nums.count(x) > len(nums)/2:
+            if nums.count(x) > len(nums) / 2:
                 return x

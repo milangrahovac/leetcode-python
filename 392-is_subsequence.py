@@ -24,6 +24,6 @@ class Solution(object):
         for x in range(len(s)):
             if s[x] not in t:
                 return False
-            t = t[t.index(s[x]) + 1:]
+            t = t[t.index(s[x]) + 1 :]
 
         return True

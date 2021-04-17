@@ -14,10 +14,12 @@
 
 
 import math
+
+
 class Solution(object):
     def judgeSquareSum(self, c):
 
-        for a in range(int(math.sqrt(c))+1):
+        for a in range(int(math.sqrt(c)) + 1):
             b = math.sqrt(c - a * a)
             if b.is_integer():
                 return True

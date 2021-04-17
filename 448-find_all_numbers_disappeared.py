@@ -22,7 +22,7 @@ class Solution(object):
                 return nums
             else:
                 nums_set = set(nums)
-                for x in range(1, max(max(nums_set), len(nums))+1):
+                for x in range(1, max(max(nums_set), len(nums)) + 1):
                     if x not in nums_set:
                         results.append(x)
                 return results

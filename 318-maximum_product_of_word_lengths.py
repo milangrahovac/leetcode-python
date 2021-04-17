@@ -32,7 +32,7 @@ class Solution(object):
             setedList.append(set(words[x]))
 
         for x in range(len(setedList)):
-            for y in range(x+1, len(setedList)):
+            for y in range(x + 1, len(setedList)):
                 if not any(letter in setedList[y] for letter in setedList[x]):
                     result = max(result, len(words[x]) * len(words[y]))
 

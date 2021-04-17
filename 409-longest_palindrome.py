@@ -26,7 +26,7 @@ class Solution:
             if x_count % 2 == 0:
                 result += x_count
             else:
-                result += x_count-1
+                result += x_count - 1
 
         if len(s) > result:
             result += 1

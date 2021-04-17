@@ -10,6 +10,7 @@
 # Could you solve it with constant space complexity?
 # (Note: The output array does not count as extra space for the purpose of space complexity analysis.)
 
+
 class Solution:
     def productExceptSelf(self, nums):
 
@@ -22,7 +23,7 @@ class Solution:
 
         if 0 not in nums:
             for x in nums:
-                result.append(int(product/x))
+                result.append(int(product / x))
         elif nums.count(0) == 1:
             for x in nums:
                 if x == 0:
@@ -36,8 +37,7 @@ class Solution:
         return result
 
 
-
-if __name__ == '__main__':
+if __name__ == "__main__":
 
     # test it
     a = [1, 2, 3, 4]

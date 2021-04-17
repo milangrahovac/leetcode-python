@@ -6,7 +6,6 @@
 # "()" and "()[]{}" are all valid but "(]" and "([)]" are not.
 
 
-
 class Solution(object):
     def isValid(self, s):
         left_parentheses = ["(", "[", "{"]
@@ -21,7 +20,9 @@ class Solution(object):
                 elif s[x] in right_parentheses:
                     if len(parentheses_list) == 0:
                         return False
-                    if right_parentheses.index(s[x]) == left_parentheses.index(parentheses_list[-1]):
+                    if right_parentheses.index(s[x]) == left_parentheses.index(
+                        parentheses_list[-1]
+                    ):
                         del parentheses_list[-1]
                     else:
                         return False

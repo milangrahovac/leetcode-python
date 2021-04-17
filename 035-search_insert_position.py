@@ -28,7 +28,7 @@ class Solution(object):
         if target in nums:
             result = nums.index(target)
         else:
-            for x in range(target-1, -1, -1):
+            for x in range(target - 1, -1, -1):
                 if x in nums:
                     result = nums.index(x) + 1
                     break

@@ -1,9 +1,9 @@
 # 17. Letter Combinations of a Phone Number
 
-# Given a string containing digits from 2-9 inclusive, 
+# Given a string containing digits from 2-9 inclusive,
 # return all possible letter combinations that the number could represent.
 
-# A mapping of digit to letters (just like on the telephone buttons) is given below. 
+# A mapping of digit to letters (just like on the telephone buttons) is given below.
 # Note that 1 does not map to any letters.
 
 
@@ -12,11 +12,12 @@
 # Output: ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"].
 
 # Note:
-# Although the above answer is in lexicographical order, 
+# Although the above answer is in lexicographical order,
 # your answer could be in any order you want.
 
 
 import itertools
+
 
 class Solution(object):
     def letterCombinations(self, digits):
@@ -29,13 +30,12 @@ class Solution(object):
             6: ["m", "n", "o"],
             7: ["p", "q", "r", "s"],
             8: ["t", "u", "v"],
-            9: ["w", "x", "y", "z"]
-
+            9: ["w", "x", "y", "z"],
         }
         digits = list(digits)
         letters = []
         results = []
-        
+
         if len(digits) == 0:
             return []
         elif len(digits) == 1:
@@ -45,6 +45,6 @@ class Solution(object):
                 letters.append(buttons[int(x)])
 
             for i in itertools.product(*letters):
-                results.append(''.join(i))
+                results.append("".join(i))
 
             return results

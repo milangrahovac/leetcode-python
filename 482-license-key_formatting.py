@@ -48,11 +48,11 @@ class Solution:
         if len(letters_and_digits) == 0:
             return ""
 
-        c = int(len(letters_and_digits)/K)
+        c = int(len(letters_and_digits) / K)
 
         for x in range(c):
             result = "-" + letters_and_digits[-K:] + result
-            letters_and_digits = letters_and_digits[:len(letters_and_digits) - K]
+            letters_and_digits = letters_and_digits[: len(letters_and_digits) - K]
 
         if len(letters_and_digits) > 0:
             result = letters_and_digits + result

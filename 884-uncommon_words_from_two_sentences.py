@@ -24,6 +24,7 @@
 
 from collections import Counter
 
+
 class Solution:
     def uncommonFromSentences(self, A, B):
         all_words = A.split() + B.split()

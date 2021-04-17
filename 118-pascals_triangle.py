@@ -26,8 +26,8 @@ class Solution:
             newRow = [1]
 
             if len(result[-1]) >= 2:
-                for x in range(len(result[-1]) -1):
-                    newRow.append(result[-1][x] + result[-1][x+1])
+                for x in range(len(result[-1]) - 1):
+                    newRow.append(result[-1][x] + result[-1][x + 1])
 
             newRow.append(1)
             result.append(newRow)

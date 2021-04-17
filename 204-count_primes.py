@@ -10,7 +10,6 @@
 
 class Solution:
     def countPrimes(self, n: int) -> int:
-        noprimes = set(j for i in range(2, int(n/2)+1) for j in range(i*2, n, i))
+        noprimes = set(j for i in range(2, int(n / 2) + 1) for j in range(i * 2, n, i))
         primes = [x for x in range(2, n) if x not in noprimes]
         return len(primes)
-        

@@ -1,6 +1,6 @@
 # 961. N-Repeated Element in Size 2N Array
 
-# In a array A of size 2N, there are N+1 unique elements, 
+# In a array A of size 2N, there are N+1 unique elements,
 # and exactly one of these elements is repeated N times.
 # Return the element repeated N times.
 
@@ -14,7 +14,7 @@
 
 # Example 3:
 # Input: [5,1,5,2,5,3,5,4]
-# Output: 5 
+# Output: 5
 
 # Note:
 # 4 <= A.length <= 10000
@@ -27,4 +27,3 @@ class Solution:
         for x in A:
             if A.count(x) > 1:
                 return x
-                

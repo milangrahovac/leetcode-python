@@ -13,10 +13,10 @@
 # Note: All inputs will be in lower-case.
 
 
-
 import collections
-class Solution:
 
+
+class Solution:
     def groupAnagrams(self, strs):
 
         result = []

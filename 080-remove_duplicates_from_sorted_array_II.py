@@ -15,7 +15,7 @@ class Solution(object):
             counter = nums.count(num)
 
             if counter > 2:
-                for x in range(0, counter-2):
+                for x in range(0, counter - 2):
                     nums.remove(num)
 
         return len(nums)

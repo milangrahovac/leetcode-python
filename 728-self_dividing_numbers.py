@@ -4,7 +4,7 @@
 # For example, 128 is a self-dividing number because 128 % 1 == 0, 128 % 2 == 0, and 128 % 8 == 0.
 # Also, a self-dividing number is not allowed to contain the digit zero.
 #
-# Given a lower and upper number bound, output a list of every possible self dividing number, 
+# Given a lower and upper number bound, output a list of every possible self dividing number,
 # including the bounds if possible.
 #
 # Example 1:
@@ -17,10 +17,9 @@
 
 
 class Solution:
-
     def selfDividingNumbers(self, left, right):
 
-        nums = list(range(left, right+1))
+        nums = list(range(left, right + 1))
         result = []
         num_is_self_dividing = True
 
@@ -36,4 +35,3 @@ class Solution:
                 if num_is_self_dividing:
                     result.append(int(num))
         return result
-

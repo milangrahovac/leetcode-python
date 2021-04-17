@@ -30,7 +30,6 @@
 
 
 class Solution:
-
     def backspaceCompare(self, S, T):
 
         s = backspace(S)

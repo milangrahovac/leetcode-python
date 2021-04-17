@@ -35,19 +35,19 @@
 class Solution:
     def isMonotonic(self, A):
 
-            if A[0] < A[-1]:
-                for x in range(len(A) - 1):
-                    if A[x] > A[x+1]:
-                        return False
+        if A[0] < A[-1]:
+            for x in range(len(A) - 1):
+                if A[x] > A[x + 1]:
+                    return False
 
-            elif A[0] > A[-1]:
-                for x in range(len(A) - 1):
-                    if A[x] < A[x+1]:
-                        return False
+        elif A[0] > A[-1]:
+            for x in range(len(A) - 1):
+                if A[x] < A[x + 1]:
+                    return False
 
-            else:
-                for x in range(len(A) - 1):
-                    if A[x] != A[x+1]:
-                        return False
+        else:
+            for x in range(len(A) - 1):
+                if A[x] != A[x + 1]:
+                    return False
 
-            return True
+        return True

@@ -22,7 +22,7 @@ class Solution(object):
 
         result = 0
 
-        for num in range(n+1):
+        for num in range(n + 1):
             if not any(int(i) in [3, 4, 7] for i in str(num)):
                 if any(int(x) in [2, 5, 6, 9] for x in str(num)):
                     result += 1

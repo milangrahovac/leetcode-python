@@ -1,7 +1,7 @@
 # 561. Array Partition I
 
-# Given an array of 2n integers, your task is to group these integers into n pairs of integer, 
-# say (a1, b1), (a2, b2), ..., (an, bn) which makes sum of min(ai, bi) 
+# Given an array of 2n integers, your task is to group these integers into n pairs of integer,
+# say (a1, b1), (a2, b2), ..., (an, bn) which makes sum of min(ai, bi)
 # for all i from 1 to n as large as possible.
 
 # Example 1:
@@ -19,6 +19,6 @@ class Solution(object):
         nums = sorted(nums)
         min_list = []
         for x in range(0, len(nums), 2):
-            i = min(nums[x], nums[x+1])
+            i = min(nums[x], nums[x + 1])
             min_list.append(i)
         return sum(min_list)

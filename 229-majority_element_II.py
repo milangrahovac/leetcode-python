@@ -16,7 +16,7 @@ class Solution(object):
     def majorityElement(self, nums):
 
         n = list(set(nums))
-        m = int(len(nums)/3)
+        m = int(len(nums) / 3)
         result = []
 
         for x in range(len(n)):

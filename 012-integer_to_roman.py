@@ -3,12 +3,13 @@
 # Given an integer, convert it to a roman numeral.
 # Input is guaranteed to be within the range from 1 to 3999.
 
+
 class Solution:
     def intToRoman(self, num):
 
         if 0 < num <= 3999:
 
-            romans0 = ["", "I", 'II', "III", "IV", "V", "VI", "VII", "VIII", "IX"]
+            romans0 = ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"]
             romans1 = ["", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"]
             romans2 = ["", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"]
             romans3 = ["", "M", "MM", "MMM"]
@@ -17,7 +18,7 @@ class Solution:
             result = ""
             n = 0
 
-            for x in range(len(num_str) -1, -1, -1):
+            for x in range(len(num_str) - 1, -1, -1):
                 if n == 0:
                     result = romans0[int(num_str[x])] + result
                 elif n == 1:

@@ -1,7 +1,7 @@
 # 215. Kth Largest Element in an Array
 
-# Find the kth largest element in an unsorted array. 
-# Note that it is the kth largest element in the sorted order, 
+# Find the kth largest element in an unsorted array.
+# Note that it is the kth largest element in the sorted order,
 # not the kth distinct element.
 
 # Example 1:
@@ -12,7 +12,7 @@
 # Input: [3,2,3,1,2,4,5,5,6] and k = 4
 # Output: 4
 
-# Note: 
+# Note:
 # You may assume k is always valid, 1 ≤ k ≤ array's length
 
 
@@ -20,6 +20,5 @@ class Solution(object):
     def findKthLargest(self, nums, k):
         if k == 1:
             return max(nums)
-        else:    
+        else:
             return sorted(nums)[-k:][:-1][0]
-                

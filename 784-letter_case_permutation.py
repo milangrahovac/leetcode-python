@@ -11,7 +11,7 @@
 #
 # Input: S = "12345"
 # Output: ["12345"]
-# 
+#
 # Note:
 # S will be a string with length at most 12.
 # S will consist only of letters or digits.
@@ -38,7 +38,9 @@ class Solution:
         if len(letters) == 0:
             result.append(S)
         else:
-            comb = list(map(list, itertools.product(*((l.upper(), l.lower()) for l in letters))))
+            comb = list(
+                map(list, itertools.product(*((l.upper(), l.lower()) for l in letters)))
+            )
 
             for c in comb:
                 for n in collections.OrderedDict(sorted(nums.items())):

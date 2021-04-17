@@ -38,13 +38,13 @@ class Solution:
                     large_group += 1
                 else:
                     if large_group >= 3:
-                        result.append([x-large_group, x-1])
+                        result.append([x - large_group, x - 1])
                     large_group = 1
 
             prev = S[x]
 
             if x == len(S) - 1:
                 if large_group >= 3:
-                    result.append([x-large_group+1, x])
+                    result.append([x - large_group + 1, x])
 
         return result

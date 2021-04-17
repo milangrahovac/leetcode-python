@@ -30,16 +30,16 @@ class Solution:
                 s1_counter[i] += 1
 
             s2_cut_counter = collections.Counter()
-            s2_cut = s2[:len(s1)]
+            s2_cut = s2[: len(s1)]
             for i in s2_cut:
                 s2_cut_counter[i] += 1
 
             if s1_counter == s2_cut_counter:
                 return True
             else:
-                for x in range(1, len(s2)-len(s1)+1):
-                    previous = s2[x-1]
-                    next = s2[x+len(s1)-1]
+                for x in range(1, len(s2) - len(s1) + 1):
+                    previous = s2[x - 1]
+                    next = s2[x + len(s1) - 1]
 
                     s2_cut_counter[previous] -= 1
                     s2_cut_counter[next] += 1

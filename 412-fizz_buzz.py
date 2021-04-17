@@ -12,7 +12,7 @@ class Solution(object):
 
         result = []
 
-        for x in range(1, n+1):
+        for x in range(1, n + 1):
             if x % 15 == 0:
                 x = "FizzBuzz"
             elif x % 5 == 0:

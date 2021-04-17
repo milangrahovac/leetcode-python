@@ -7,7 +7,7 @@
 # Example 1:
 # Input: "aacecaaa"
 # Output: "aaacecaaa"
-# 
+#
 # Example 2:
 # Input: "abcd"
 # Output: "dcbabcd"

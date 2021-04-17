@@ -29,7 +29,6 @@ import random
 
 
 class Solution(object):
-
     def __init__(self, nums):
         self.nums = nums
 

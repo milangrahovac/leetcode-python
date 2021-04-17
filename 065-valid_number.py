@@ -18,8 +18,8 @@
 # "-+3" => false
 # "95a54e53" => false
 
-# Note: It is intended for the problem statement to be ambiguous. 
-# You should gather all requirements up front before implementing one. 
+# Note: It is intended for the problem statement to be ambiguous.
+# You should gather all requirements up front before implementing one.
 # However, here is a list of characters that can be in a valid decimal number:
 
 # Numbers 0-9
@@ -29,8 +29,8 @@
 # Of course, the context of these characters also matters in the input.
 
 # Update (2015-02-10):
-# The signature of the C++ function had been updated. 
-# If you still see your function signature accepts a const char * argument, 
+# The signature of the C++ function had been updated.
+# If you still see your function signature accepts a const char * argument,
 # please click the reload button to reset your code definition.
 
 
@@ -38,7 +38,7 @@ class Solution:
     def isNumber(self, s):
 
         nums = [str(x) for x in range(10)]
-        symbols = ['+', '-', '.', 'e', " "]
+        symbols = ["+", "-", ".", "e", " "]
         allowed = nums + symbols
 
         if all(x in allowed for x in s):
@@ -63,7 +63,9 @@ class Solution:
                         return False
 
                     if "+" in fixed and "-" not in fixed:
-                        if (fixed.count("+") > 1 and "e" not in fixed) or fixed.count("+") > 2:
+                        if (fixed.count("+") > 1 and "e" not in fixed) or fixed.count(
+                            "+"
+                        ) > 2:
                             return False
                         if fixed[-1] == "+":
                             return False
@@ -114,4 +116,3 @@ class Solution:
                         return True
                     return False
         return False
-        
