@@ -41,3 +41,8 @@ class Solution:
                 string.insert(x, S[x])
 
         return "".join(string)
+
+
+# Input: "ab-cd"
+# Output: "dc-ba"
+print(Solution().reverseOnlyLetters("ab-cd"))
