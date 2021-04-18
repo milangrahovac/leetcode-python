@@ -12,3 +12,19 @@ repos:
     rev: 19.3b0
     hooks:
     -   id: black
+
+-   repo: https://github.com/PyCQA/pylint
+    rev: pylint-2.7.4
+    hooks:
+    -   id: pylint
+        name: pylint
+        entry: pylint
+        language: system
+        types: [python]
+        args:
+          [
+            "-rn",
+            "-sn",
+            "--rcfile=pylintrc",
+            "--load-plugins=pylint.extensions.docparams",
+          ]
