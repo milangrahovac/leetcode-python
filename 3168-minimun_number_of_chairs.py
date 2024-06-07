@@ -52,15 +52,14 @@
 
 
 class Solution:
-  def minimumChairs(self, s: str) -> int:
-      current = 0
-      maxGuests = 0
-      for guest in s:
-          if guest == "E":
-              current += 1
-          elif guest == "L":
-              current -= 1
-          if current > maxGuests:
-              maxGuests = current
-      return maxGuests
-      
+    def minimumChairs(self, s: str) -> int:
+        currentGuests = 0
+        maxGuests = 0
+        for guest in s:
+            if guest == "E":
+                currentGuests += 1
+            elif guest == "L":
+                currentGuests -= 1
+            maxGuests = max(maxGuests, currentGuests)
+        return maxGuests
+  
