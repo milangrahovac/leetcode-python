@@ -44,13 +44,15 @@ class Solution:
         guess_list = list(guess)
     
         for x in range(len(guess_list)):
-            if guess_list[x] in secret_list:
-                if guess_list[x] == secret_list[x]:
-                    bulls += 1
-                    secret_list[x] = "x"
-                else:
-                    cows += 1
-                    index_to_replace = secret_list.index(guess_list[x])
-                    secret_list[index_to_replace] = 'x'
+            if guess_list[x] == secret_list[x]:
+                bulls += 1
+                guess_list[x] = "x"
+                secret_list[x] = "x"
+
+        for n in range(len(guess_list)):
+            if guess_list[n] != "x" and guess_list[n] in secret_list:
+                cows += 1
+                index_to_replace = secret_list.index(guess_list[n])
+                secret_list[index_to_replace] = 'x'
 
         return "{}A{}B".format(bulls, cows)
